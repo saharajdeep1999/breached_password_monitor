@@ -1,0 +1,36 @@
+License 📄
+---
+
+### Key Components Explained:
+1. **Continuous Monitoring Engine**  
+   Scheduled checks using APScheduler with configurable intervals
+
+2. **HIBP API Integration**  
+   Implements k-Anonymity protocol - only sends first 5 characters of SHA-1 hashes
+
+3. **Notification System**  
+   Supports:
+   - SMTP (Gmail, Outlook, custom servers)
+   - Slack webhooks
+   - Customizable message templates
+
+4. **Dashboard Features**:
+   - Password health score
+   - Breach timeline visualization
+   - Top compromised passwords
+   - Department-wise risk analysis
+
+5. **Security Protections**:
+   - Automatic password hash truncation
+   - Encrypted configuration secrets
+   - Read-only access for reports
+   - Session-based database access
+
+### Ideal For:
+- Security Operations Centers
+- IT Administrators
+- Compliance Teams (GDPR, HIPAA, PCI-DSS)
+- Personal password hygiene monitoring
+- Third-party vendor risk assessment
+
+> **Warning**: Always obtain proper authorization before monitoring organizational passwords. Unauthorized password auditing may violate privacy laws.
