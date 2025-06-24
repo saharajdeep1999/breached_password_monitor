@@ -1,0 +1,24 @@
+hibp:
+  api_url: "https://api.pwnedpasswords.com/range/"
+  rate_limit: 1.5  # Seconds between requests
+
+database:
+  path: "data/passwords.db"
+  table: "monitored_passwords"
+
+notifications:
+  email:
+    enabled: true
+    smtp_server: "smtp.example.com"
+    smtp_port: 587
+    username: "alerts@example.com"
+    password: "qwerty123!"
+    from_addr: "breach-monitor@yourdomain.com"
+    to_addrs: ["security-team@yourdomain.com"]
+  slack:
+    enabled: true
+    webhook_url: "https://hooks.slack.com/services/your/webhook/url"
+
+monitoring:
+  check_interval_hours: 24
+  max_history_days: 90
