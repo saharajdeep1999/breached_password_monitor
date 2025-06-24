@@ -18,19 +18,3 @@ A proactive security tool that monitors your passwords against 10+ billion compr
 ### Prerequisites
 - Python 3.8+
 - Pip package manager
-
-### Steps:
-```bash
-# Clone repository
-git clone https://github.com/yourusername/breached_password_monitor.git
-cd breached_password_monitor
-
-# Create virtual environment
-python -m venv monitor-env
-source monitor-env/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Initialize database
-python -c "from src.database import init_db; init_db()"
